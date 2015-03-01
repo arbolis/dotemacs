@@ -11,26 +11,10 @@
 (require 'yasnippet)
 (require 'iedit)
 
-(elpy-enable)
+(elpy-enable) ;This is to enable what I installed in the melpa (i.e. enable elpy package)
 (yas/initialize)
-(define-key yas-minor-mode-map (kbd "C-c k") 'yas-expand)
-(define-key global-map (kbd "C-c o") 'iedit-mode)
-
-
-
-;(eval-after-load "elpy" '(progn (elpy-enable))) 
-;(elpy-enable)  ;This is to enable what I installed in the melpa (i.e. enable elpy package)
-
-
-;(eval-after-load "yasnippet"
-;'(progn
-;(yas/initialize)
-;(define-key yas-minor-mode-map (kdb "C-c k") 'yas-expand))) ;This fixes a bug in elpy
-
-
-;(eval-after-load "iedit-mode"
-;'(progn
-;(define-key global-map (kbd "C-c o") 'iedit-mode)))  ;This fixes another bug of elpy
+(define-key yas-minor-mode-map (kbd "C-c k") 'yas-expand) ;This fixes a bug in elpy
+(define-key global-map (kbd "C-c o") 'iedit-mode)  ;This fixes another bug of elpy
 
 
 
